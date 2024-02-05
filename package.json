@@ -1,0 +1,7 @@
+{
+    "name": "tmodals",
+    "version": "0.0.1",
+    "description": "modals library",
+    "main": "dist/v0.0.1/tmodals.js",
+    "author": "@ovatlh"
+}

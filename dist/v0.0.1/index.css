@@ -1,0 +1,48 @@
+/* * {
+  outline: 1px solid rgba(255, 0, 0, 0.1);
+} */
+
+html {
+  background-color: whitesmoke;
+  color: black;
+}
+
+body {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: start;
+  grid-auto-rows: auto;
+  gap: 2em;
+  padding: 2em;
+  overflow-y: scroll;
+}
+
+.card {
+  background-color: white;
+  padding: 1em;
+  font-weight: bold;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  justify-self: center;
+}
+.style-01 {
+  color: green;
+}
+.style-02 {
+  color: blue;
+}
+.style-03 {
+  color: brown;
+}
+
+body > button {
+  cursor: pointer;
+}
+
+.custom-content-01,
+.custom-content-02,
+.custom-content-03 {
+  display: grid;
+  gap: 1em;
+  grid-auto-flow: row;
+}
