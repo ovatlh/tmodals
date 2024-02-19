@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tmodals - v0.0.2</title>
+
+    <link rel="stylesheet" href="tmodals.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="tmodals.js"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <button onclick="fn_click_create_modal();">
+      <p>Create modal</p>
+    </button>
+    
+    <button onclick="fn_create_modal_template();">
+      <p>Create template modal</p>
+    </button>
+
+    <div class="card style-01">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eum!</p>
+      <p>Doloribus harum iure rerum quasi veritatis esse facere, quidem qui.</p>
+      <p>Incidunt consequuntur minus asperiores commodi cum labore officia alias suscipit!</p>
+      <p>Voluptatem perspiciatis architecto perferendis necessitatibus atque delectus ex dicta ipsa!</p>
+      <p>Quas, odit accusamus nesciunt nobis voluptates esse dicta earum temporibus.</p>
+    </div>
+
+    <div class="card style-02">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eum!</p>
+      <p>Doloribus harum iure rerum quasi veritatis esse facere, quidem qui.</p>
+      <p>Incidunt consequuntur minus asperiores commodi cum labore officia alias suscipit!</p>
+      <p>Voluptatem perspiciatis architecto perferendis necessitatibus atque delectus ex dicta ipsa!</p>
+      <p>Quas, odit accusamus nesciunt nobis voluptates esse dicta earum temporibus.</p>
+    </div>
+
+    <div class="card style-03">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eum!</p>
+      <p>Doloribus harum iure rerum quasi veritatis esse facere, quidem qui.</p>
+      <p>Incidunt consequuntur minus asperiores commodi cum labore officia alias suscipit!</p>
+      <p>Voluptatem perspiciatis architecto perferendis necessitatibus atque delectus ex dicta ipsa!</p>
+      <p>Quas, odit accusamus nesciunt nobis voluptates esse dicta earum temporibus.</p>
+    </div>
+
+    <template id="template01">
+      <div class="custom-content-01">
+        <button>Button 01</button>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Textarea 01"></textarea>
+        <select name="" id="">
+          <option value="">Select 01</option>
+        </select>
+        <button type="button" onclick="fn_create_modal_template();">Create modal</button>
+      </div>
+    </template>
+
+    <template id="template02">
+      <div class="custom-content-02">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nulla?</p>
+        <p>Tenetur atque aut consequuntur harum aliquid, ipsa rem nesciunt esse!</p>
+        <p>Voluptates fugiat magnam amet sapiente eveniet fugit, nulla error ducimus?</p>
+        <p>Minus voluptatem sit reiciendis ea officiis dolorum laudantium debitis aliquam?</p>
+        <p>Fugit deserunt recusandae nisi minus enim magnam ipsa nesciunt doloremque?</p>
+        <p>Dolorum blanditiis fugiat architecto dolorem nobis neque harum itaque corporis.</p>
+        <p>Odio, quaerat ea nesciunt suscipit eos illum dignissimos fugiat voluptatem!</p>
+        <p>Beatae, atque! Amet inventore dolore quidem magnam quis, culpa necessitatibus.</p>
+        <p>Porro natus accusantium minus ipsa illum sequi explicabo perferendis quis.</p>
+        <p>Porro optio voluptatem eos nemo dignissimos dolorem commodi nihil beatae!</p>
+        <button type="button" onclick="fn_create_modal_template();">Create modal</button>
+      </div>
+    </template>
+
+    <template id="template03">
+      <form class="custom-content-03" onsubmit="fn_form_submit(event);">
+        <input type="text" placeholder="Text 03" required>
+        <select name="" id="" required>
+          <option value="">Select 03</option>
+          <option value="1">Option - 01</option>
+          <option value="2">Option - 02</option>
+          <option value="3">Option - 03</option>
+        </select>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button type="submit">Save</button>
+      </form>
+      <button type="button" onclick="fn_create_modal_template();">Create modal</button>
+    </template>
+  </body>
+</html>
