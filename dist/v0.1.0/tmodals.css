@@ -1,0 +1,68 @@
+.t-modals:has(.t-modal-item) {
+  display: grid;
+}
+
+.t-modals {
+  position: fixed;
+  display: none;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  --item-container-margin: 1rem;
+  --item-container-border-radius: 0.2rem;
+  --item-container-content-margin: 2rem;
+  --btn-close-size: 1.5rem;
+}
+
+.t-modals .t-modal-item {
+  display: grid;
+  grid-template-areas: "ITEM";
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+}
+
+.t-modals .t-modal-item .t-modal-bg {
+  z-index: 100;
+  grid-area: ITEM;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.t-modals .t-modal-item .t-modal-bg[data-is-background-visible="true"] {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.t-modals .t-modal-item .t-modal-bg[data-is-background-visible="false"] {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.t-modals .t-modal-item .t-modal-container {
+  z-index: 200;
+  grid-area: ITEM;
+  justify-self: center;
+  align-self: center;
+  background-color: white;
+  margin: var(--item-container-margin);
+  padding: 0;
+  border-radius: var(--item-container-border-radius);
+  box-sizing: border-box;
+  position: relative;
+  filter: drop-shadow(0rem 0rem 0.5rem rgba(0, 0, 0, 0.3));
+}
+
+.t-modals .t-modal-item .t-modal-container .t-modal-content {
+  margin: var(--item-container-content-margin);
+  overflow-y: auto;
+  max-height: calc(100dvh - var(--item-container-margin) * 2 - var(--item-container-content-margin) * 2);
+  max-width: calc(100dvw - var(--item-container-margin) * 2 - var(--item-container-content-margin) * 2);
+
+  display: grid;
+  justify-content: center;
+}
+
+.t-modals .t-modal-item .t-modal-container .t-modal-close-btn {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: var(--btn-close-size);
+  height: var(--btn-close-size);
+  cursor: pointer;
+}

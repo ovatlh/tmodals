@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tModals - v0.1.0</title>
+
+  <link rel="stylesheet" href="tmodals.css">
+  <link rel="stylesheet" href="index.css">
+
+  <script src="tmodals.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <template id="modal-test-01">
+    <h1>TEXT</h1>
+
+    <button onclick="fnModalTest01();">Modal: test 01 (isBackgroundVisible: true, isCloseWithBackground: true)</button>
+    <button onclick="fnModalTest02();">Modal: test 02 (isBackgroundVisible: false, isCloseWithBackground: true)</button>
+    <button onclick="fnModalTest03();">Modal: test 03 (isBackgroundVisible: true, isCloseWithBackground: false)</button>
+    <button onclick="fnModalTest04();">Modal: test 04 (isBackgroundVisible: false, isCloseWithBackground: false)</button>
+  </template>
+
+  <button onclick="fnModalTest01();">Modal: test 01 (isBackgroundVisible: true, isCloseWithBackground: true)</button>
+  <button onclick="fnModalTest02();">Modal: test 02 (isBackgroundVisible: false, isCloseWithBackground: true)</button>
+  <button onclick="fnModalTest03();">Modal: test 03 (isBackgroundVisible: true, isCloseWithBackground: false)</button>
+  <button onclick="fnModalTest04();">Modal: test 04 (isBackgroundVisible: false, isCloseWithBackground: false)</button>
+</body>
+</html>

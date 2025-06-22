@@ -1,0 +1,8 @@
+body {
+  display: grid;
+  align-content: start;
+}
+
+.t-modals .t-modal-item .t-modal-container .t-modal-content * {
+  /* word-break: break-all; */
+}
