@@ -56,6 +56,7 @@
 
   display: grid;
   justify-content: center;
+  width: min-content;
 }
 
 .t-modals .t-modal-item .t-modal-container .t-modal-close-btn {
